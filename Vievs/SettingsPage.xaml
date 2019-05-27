@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Krryp.Vievs.SettingsPage">
+    <ContentPage.Content>
+        <StackLayout >
+            <Label Text="USTAWIENIA" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+               FontSize="23"
+               TextColor="NavajoWhite" FontAttributes="bold"/>
+
+
+            <Button x:Name="ob1" Text="Tryb Jasny"  />
+            <Button x:Name="ob2" Text="Tryb Ciemny"  />
+            <Button x:Name="ob3" Text="Język Polski"  />
+            <Button x:Name="ob4" Text="English"  />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

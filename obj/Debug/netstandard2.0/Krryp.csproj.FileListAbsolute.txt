@@ -1,0 +1,17 @@
+D:\App\Krryp\Krryp\Krryp\obj\Debug\netstandard2.0\App.xaml.g.cs
+D:\App\Krryp\Krryp\Krryp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+D:\App\Krryp\Krryp\Krryp\obj\Debug\netstandard2.0\Krryp.csproj.CoreCompileInputs.cache
+D:\App\Krryp\Krryp\Krryp\obj\Debug\netstandard2.0\Krryp.AssemblyInfoInputs.cache
+D:\App\Krryp\Krryp\Krryp\obj\Debug\netstandard2.0\Krryp.AssemblyInfo.cs
+D:\App\Krryp\Krryp\Krryp\obj\Debug\netstandard2.0\Vievs\LoginPage.xaml.g.cs
+D:\App\Krryp\Krryp\Krryp\obj\Debug\netstandard2.0\Vievs\CrypPage.xaml.g.cs
+D:\App\Krryp\Krryp\Krryp\obj\Debug\netstandard2.0\MainPage1.xaml.g.cs
+D:\App\Krryp\Krryp\Krryp\obj\Debug\netstandard2.0\Vievs\CalcPage.xaml.g.cs
+D:\App\Krryp\Krryp\Krryp\obj\Debug\netstandard2.0\Vievs\SettingsPage.xaml.g.cs
+D:\App\Krryp\Krryp\Krryp\obj\Debug\netstandard2.0\Krryp.csprojAssemblyReference.cache
+D:\App\Krryp\Krryp\Krryp\obj\Debug\netstandard2.0\XamlC.stamp
+D:\App\Krryp\Krryp\Krryp\bin\Debug\netstandard2.0\KryptoMarket.deps.json
+D:\App\Krryp\Krryp\Krryp\bin\Debug\netstandard2.0\KryptoMarket.dll
+D:\App\Krryp\Krryp\Krryp\bin\Debug\netstandard2.0\KryptoMarket.pdb
+D:\App\Krryp\Krryp\Krryp\obj\Debug\netstandard2.0\KryptoMarket.dll
+D:\App\Krryp\Krryp\Krryp\obj\Debug\netstandard2.0\KryptoMarket.pdb

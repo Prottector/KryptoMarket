@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<XamlProjectMeta xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Files>
+    <XamlFileMeta>
+      <FilePath>D:\App\Krryp\Krryp\Krryp\App.xaml</FilePath>
+      <Hash>0E-D0-7D-28-A7-FD-95-97-94-C4-EA-A8-44-51-62-5F</Hash>
+      <Properties />
+    </XamlFileMeta>
+    <XamlFileMeta>
+      <FilePath>D:\App\Krryp\Krryp\Krryp\MainPage.xaml</FilePath>
+      <Hash>AA-7E-2F-91-8F-72-67-F7-EF-A5-65-FF-4D-4A-9E-F8</Hash>
+      <Properties />
+    </XamlFileMeta>
+  </Files>
+</XamlProjectMeta>

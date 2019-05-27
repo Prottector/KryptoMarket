@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Krryp"
+             xmlns:models="clr-namespace:Krryp.Models"
+             x:Class="Krryp.MainPage">
+
+
+
+
+
+    
+    <StackLayout  x:Name="st1">
+      
+        
+        
+        <models:Cardview HorizontalOptions="CenterAndExpand"
+                              VerticalOptions="CenterAndExpand"
+                              CornerRadius="20"
+                              Padding="10, 10, 10, 10">
+            <ScrollView Orientation="Vertical" VerticalOptions="StartAndExpand">
+            <Grid VerticalOptions="StartAndExpand">
+
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+                <RowDefinition Height="80" />
+            </Grid.RowDefinitions>
+          
+                <ListView  x:Name="HeaderList"></ListView>
+            
+            <Label x:Name="Ex1" VerticalOptions="CenterAndExpand" Grid.Row="0" BackgroundColor="#133253" TextColor="NavajoWhite" FontSize="Large">
+                <Label.Text>
+                    Bitcoin
+                    Wartość USD:     Wartość EUR: 
+                </Label.Text>
+            </Label>
+            
+
+            <Label x:Name="Ex2" VerticalOptions="CenterAndExpand" Grid.Row="1" BackgroundColor="#133253" TextColor="NavajoWhite" FontSize="Large">
+                <Label.Text>
+                    Litecoin
+                    Wartość USD:     Wartość EUR:
+                </Label.Text>
+            </Label>
+            <Label x:Name="Ex3" VerticalOptions="CenterAndExpand" Grid.Row="2" BackgroundColor="#133253" TextColor="NavajoWhite" FontSize="Large">
+                <Label.Text>
+                    Ethereum
+                    Wartość USD:     Wartość EUR:
+                </Label.Text>
+            </Label>
+            <Label x:Name="Ex4" VerticalOptions="CenterAndExpand" Grid.Row="3" BackgroundColor="#133253" TextColor="NavajoWhite" FontSize="Large">
+                <Label.Text>
+                    Zcash
+                    Wartość USD:     Wartość EUR:
+                </Label.Text>
+            </Label>
+            <Label x:Name="Ex5" VerticalOptions="CenterAndExpand" Grid.Row="4" BackgroundColor="#133253" TextColor="NavajoWhite" FontSize="Large">
+                <Label.Text>
+                    Dash
+                    Wartość USD:     Wartość EUR:
+                </Label.Text>
+            </Label>
+                    <Label x:Name="Ex6" VerticalOptions="CenterAndExpand" Grid.Row="5" BackgroundColor="#133253" TextColor="NavajoWhite" FontSize="Large">
+                        <Label.Text>
+                            XRP
+                    Wartość USD:     Wartość EUR:
+                        </Label.Text>
+            </Label>
+
+            <Label x:Name="Ex7" VerticalOptions="CenterAndExpand" Grid.Row="6" BackgroundColor="#133253" TextColor="NavajoWhite" FontSize="Large">
+                    <Label.Text>
+                        BNB
+                    Wartość USD:     Wartość EUR:
+                    </Label.Text>
+            </Label>
+
+            <Label x:Name="Ex8" VerticalOptions="CenterAndExpand" Grid.Row="7" BackgroundColor="#133253" TextColor="NavajoWhite" FontSize="Large">
+                        <Label.Text>
+                            BCH
+                    Wartość USD:     Wartość EUR:
+                        </Label.Text>
+            </Label>
+
+            <Label x:Name="Ex9" VerticalOptions="CenterAndExpand" Grid.Row="8" BackgroundColor="#133253" TextColor="NavajoWhite" FontSize="Large">
+                        <Label.Text>
+                            XMR
+                    Wartość USD:     Wartość EUR:
+                        </Label.Text>
+            </Label>
+
+            <Label x:Name="Ex10" VerticalOptions="CenterAndExpand" Grid.Row="9" BackgroundColor="#133253" TextColor="NavajoWhite" FontSize="Large">
+                        <Label.Text>
+                            BSV
+                    Wartość USD:     Wartość EUR:
+                        </Label.Text>
+            </Label>
+
+
+
+
+                </Grid>
+            </ScrollView>
+            
+        </models:Cardview>
+        <Button x:Name="button" Grid.Row="6" Text="Odśwież" TextColor="NavajoWhite" BackgroundColor="#133253" />
+    </StackLayout>
+    
+
+</ContentPage>

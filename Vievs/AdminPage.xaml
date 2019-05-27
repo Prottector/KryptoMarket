@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:Krryp.Models"
+             x:Class="Krryp.Vievs.AdminPage">
+    <ContentPage.Content>
+        <models:Cardview HorizontalOptions="CenterAndExpand"
+                              VerticalOptions="CenterAndExpand"
+                              CornerRadius="20"
+                              Padding="10, 10, 10, 10">
+            <StackLayout x:Name="st">
+
+
+                <Label Text="Panel administracyjny"
+                 
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="NavajoWhite" FontSize="25"/>
+
+
+                <Picker TitleColor="NavajoWhite" Title="Wybierz kryptowalutę" VerticalOptions="Fill" TextColor="NavajoWhite" x:Name="Maino" BackgroundColor="#133253" PropertyChanged="Maino_PropertyChanged" ItemsSource="{Binding NamesList}"></Picker>
+               
+                <Entry Keyboard="Numeric" Placeholder="Wpisz wartość" TextColor="NavajoWhite" BackgroundColor="#133253" VerticalOptions="Center" x:Name="Edytor"></Entry>
+                <Button x:Name="EdyButton" Text="Edytuj" Clicked="EdyButton_Clicked"/>
+
+               
+                 
+               
+
+
+                <StackLayout>
+
+                    <Label Text="Zarządzanie użytkownikami"
+                 
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="NavajoWhite" FontSize="25"/>
+
+                    <ListView x:Name="ListViewItems" 
+                                BackgroundColor="#133253"
+                        ItemsSource="{Binding UserCollection}" IsPullToRefreshEnabled="True">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <ViewCell.ContextActions>
+                                        <MenuItem Clicked="OnDelete" CommandParameter="{Binding .}" Text="Usuń" IsDestructive="True">
+                                        </MenuItem>
+                                        <MenuItem Clicked="OnMore" CommandParameter="{Binding .}" Text="Edycja">
+                                        </MenuItem>
+                                    </ViewCell.ContextActions>
+                                    <ViewCell.View>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+
+                                            </Grid.RowDefinitions>
+                                            <Grid>
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="Auto" />
+
+                                                </Grid.ColumnDefinitions>
+                                               
+                                                <Label  x:Name="ID" Text="{Binding Id}" Grid.Column="1" VerticalOptions="Center" TextColor="NavajoWhite"/>
+                                                <Label  Text="{Binding Username}" Grid.Column ="2" VerticalOptions="Center" TextColor="NavajoWhite"/>
+                                                <Label  Text="{Binding Password}" Grid.Column="3" VerticalOptions="Center" TextColor="NavajoWhite" />
+                                            </Grid>
+
+                                        </Grid>
+                                    </ViewCell.View>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+
+                    <Entry Placeholder="Wpisz nick" TextColor="NavajoWhite" BackgroundColor="#133253" VerticalOptions="Center" x:Name="EditUsername"></Entry>
+                    <Entry Placeholder="Wpisz hasło" TextColor="NavajoWhite" BackgroundColor="#133253" VerticalOptions="Center" x:Name="EditPassword"></Entry>
+
+
+                    <Label HorizontalOptions="CenterAndExpand" TextColor="NavajoWhite"/>
+
+                    <Button x:Name="DodButton" Text="Dodaj" Clicked="DodButton_Clicked"/>
+                    
+
+
+                    
+
+
+
+                </StackLayout>
+               
+            </StackLayout>
+
+        </models:Cardview>
+
+
+
+    </ContentPage.Content>
+</ContentPage>

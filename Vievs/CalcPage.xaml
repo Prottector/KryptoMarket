@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:models="clr-namespace:Krryp.Models"
+             x:Class="Krryp.Vievs.CalcPage">
+    <ContentPage.Content>
+        <models:Cardview HorizontalOptions="CenterAndExpand"
+                              VerticalOptions="CenterAndExpand"
+                              CornerRadius="20"
+                              Padding="10, 10, 10, 10">
+            <StackLayout x:Name="st1">
+           
+
+                <Label Text="Przeliczanie krypto na dolary"
+                 
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="NavajoWhite" FontSize="25"/>
+
+
+                <Picker TitleColor="NavajoWhite" Title="Wybierz kryptowalutę" VerticalOptions="Fill" TextColor="NavajoWhite" x:Name="MainPicker" BackgroundColor="#133253" PropertyChanged="MainPicker_PropertyChanged" ItemsSource="{Binding NamesList}"></Picker>
+                <Picker TitleColor="NavajoWhite" Title="Wybierz walutę" VerticalOptions="Fill" TextColor="NavajoWhite" x:Name="MainPickerCurrency" BackgroundColor="#133253" PropertyChanged="MainPickerCurrency_PropertyChanged"></Picker>
+                <Label  HorizontalOptions="CenterAndExpand" TextColor="NavajoWhite"/>
+                <Entry Keyboard="Numeric" Placeholder="Wpisz wartość" TextColor="NavajoWhite" BackgroundColor="#133253" VerticalOptions="Center" x:Name="Count"></Entry>
+                <Button x:Name="OblButton" Text="Oblicz" Clicked="OblButton_Clicked"/>
+
+                <Label Text="Obliczona wartość: " FontSize="20" x:Name="obli"
+                 
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="NavajoWhite"/>
+
+
+                <StackLayout>
+
+                    <Label Text="Przeliczanie krypto na krypto"
+                 
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="NavajoWhite" FontSize="25"/>
+
+
+                    <Picker TitleColor="NavajoWhite" Title="Wybierz bazową walutę" VerticalOptions="Fill" TextColor="NavajoWhite" x:Name="SecondaryFirstPicker" BackgroundColor="#133253" PropertyChanged="SecondaryFirstPicker_PropertyChanged" ItemsSource="{Binding NamesList}"></Picker>
+                    <Picker TitleColor="NavajoWhite" Title="Wybierz docelową walutę" VerticalOptions="Fill" TextColor="NavajoWhite" x:Name="SecondarySecondPicker" BackgroundColor="#133253" PropertyChanged="SecondarySecondPicker_PropertyChanged" ItemsSource="{Binding NamesList}"></Picker>
+                    <Label HorizontalOptions="CenterAndExpand" TextColor="NavajoWhite"/>
+                    <Entry Keyboard="Numeric" Placeholder="Wpisz wartość" TextColor="NavajoWhite" BackgroundColor="#133253" VerticalOptions="Center" x:Name="Countt"></Entry>
+                    <Button x:Name="Obl1Button" Text="Oblicz" Clicked="Obl1Button_Clicked"/>
+
+                    <Label Text="" x:Name="oblii" FontSize="20"
+                 
+                HorizontalOptions="CenterAndExpand"
+                   TextColor="NavajoWhite"/>
+
+
+                </StackLayout>
+            
+        </StackLayout>
+
+        </models:Cardview>
+
+
+
+    </ContentPage.Content>
+</ContentPage>

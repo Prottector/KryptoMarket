@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Krryp.Vievs.CrypPage">
+    <ContentPage.Content>
+        <StackLayout Spacing="10" Padding="10" x:Name="s1">
+         
+            <Label Text="Sczegółowe informacje" 
+           HorizontalOptions="Center"
+           VerticalOptions="CenterAndExpand"
+               FontSize="23"
+               TextColor="NavajoWhite" FontAttributes="bold"/>
+
+            <ActivityIndicator VerticalOptions="Center" HorizontalOptions="Center" x:Name="activity_indicator" Color="#4D7EE1" />
+            <ListView x:Name="crypList" ItemsSource="{Binding Cryptyp}" HasUnevenRows="True" BackgroundColor="#133253">
+
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        
+                        <ViewCell>
+                            <ViewCell.View>
+                                <StackLayout Spacing="5">
+                                    <Label Text="{Binding CrypName}" FontSize="30" TextColor="NavajoWhite" />
+                                    <Image Source="{Binding ImageUrl}" WidthRequest="90" HeightRequest="90" />
+
+                                    <Label Text="{Binding CrypDesc}" FontSize="14" TextColor="NavajoWhite"/>
+
+                                </StackLayout>
+                            </ViewCell.View>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+
+
+            </ListView>
+            
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
